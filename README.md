@@ -31,6 +31,7 @@ para fugir do visual de template:
 | **Forma** | raio grande só nos painéis (26px); cards 10px; fotos quase retas (4px) |
 | **Profundidade** | fios de 1px em vez de sombra; sombra curta e seca só nos elementos flutuantes |
 | **Textura** | grão SVG a 5,5% sobre a página inteira |
+| **Marca** | logotipo oficial (joelho + serifa), extraído do fundo naval para PNG transparente |
 
 Decisões que tiram a "cara de template": sobrancelhas em versalete com fio (não pílulas),
 numerais serifados no lugar de ícones outline, bento assimétrico nas áreas de atuação
@@ -62,8 +63,10 @@ assets/css/classico.css    design system da clássica
 assets/js/main.js          scroll e animações da editorial
 assets/js/classico.js      scroll e animações da clássica
 
-assets/img/*.webp          fotos do Dr. David (otimizadas, ~60 KB cada)
-assets/img/src/            originais em PNG/JPG baixados do site atual
+assets/img/logo-*.png      logotipo oficial recortado do fundo (dark p/ claro, light p/ escuro)
+assets/img/dr-*.webp       ensaio profissional, recortado e otimizado (~55-75 KB cada)
+assets/img/src/            JPG de origem dos recortes
+assets/img/src/legacy/     imagens da primeira versão, substituídas
 .claude/launch.json        config do servidor de desenvolvimento
 ```
 
@@ -116,6 +119,22 @@ npx vercel --prod
 ```
 
 Sem configuração: a raiz do projeto já é o output.
+
+## Imagens
+
+Logotipo oficial do médico, extraído do arquivo em fundo naval para dois PNG
+transparentes: `logo-dark.png` (fundos claros) e `logo-light.png` (fundos escuros).
+
+As fotos vêm do ensaio profissional (Nikon Z6 II, 15 fotos). Seleção:
+
+| Uso | Origem | Por quê |
+|---|---|---|
+| Hero | `IMG_5085` | jaleco, sorriso aberto, pose 3/4 — a mais acolhedora do ensaio |
+| Sobre | `IMG_5078` | sentado, inclinado à frente — lê como escuta, combina com "cuidado humanizado" |
+| CTA | `IMG_5080` | camisa teal, olhar fora de câmera — troca de figurino, fecha a página sem repetir |
+
+Na editorial o retrato vive dentro do arco; na clássica, dentro da forma orgânica azul.
+Nenhuma das duas usa recorte em fundo chapado.
 
 ## Pontos de contato (iguais nas duas versões)
 

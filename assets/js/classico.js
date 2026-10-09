@@ -182,8 +182,8 @@
     const heroTl = gsap.timeline({ delay: 0.15 });
     heroTl
       .from('.nav__inner', { y: -24, opacity: 0, duration: 0.8, ease: 'power2.out' })
-      .from('.hero__photo', { y: 46, opacity: 0, scale: 0.97, duration: 1.15, ease: 'power3.out' }, 0.1)
-      .from('.hero__blob', { scale: 0.82, opacity: 0, duration: 1.1, ease: 'power3.out' }, 0.1)
+      .from('.hero__blob', { y: 34, opacity: 0, scale: 0.94, duration: 1.2, ease: 'power3.out' }, 0.1)
+      .from('.hero__blob img', { scale: 1.14, duration: 1.6, ease: 'power3.out' }, 0.1)
       .from('.float-card', { y: 24, opacity: 0, duration: 0.7, stagger: 0.14, ease: 'back.out(1.6)' }, 0.65);
 
     /* --- flutuação contínua dos cards --- */

@@ -196,7 +196,7 @@
     });
 
     /* fotos: cortina abrindo de baixo para cima */
-    document.querySelectorAll('.about__frame').forEach((el) => {
+    document.querySelectorAll('.about__frame, .cta__arch').forEach((el) => {
       gsap.from(el, {
         clipPath: 'inset(100% 0% 0% 0%)',
         duration: 1.25,
@@ -217,9 +217,8 @@
     /* entrada do hero */
     gsap.timeline({ delay: 0.12 })
       .from('.nav__inner', { y: -18, opacity: 0, duration: 0.8, ease: 'power2.out' })
-      .from('.hero__arch', { scaleY: 0.88, opacity: 0, transformOrigin: '50% 100%', duration: 1.15, ease: 'power3.out' }, 0.15)
-      .from('.hero__photo', { y: 34, opacity: 0, duration: 1.2, ease: 'power3.out' }, 0.25)
-      .from('.hero__contact', { y: 16, opacity: 0, duration: 0.7, ease: 'power2.out' }, 0.8);
+      .from('.hero__arch', { clipPath: 'inset(100% 0% 0% 0%)', duration: 1.3, ease: 'power3.inOut' }, 0.12)
+      .from('.hero__arch img', { scale: 1.12, duration: 1.6, ease: 'power3.out' }, 0.12);
 
     /* flutuação discreta */
     document.querySelectorAll('[data-float]').forEach((el) => {

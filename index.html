@@ -12,7 +12,7 @@
 <meta property="og:title" content="Dr. David Pires — Ortopedista e Especialista em Joelho">
 <meta property="og:description" content="Diagnóstico preciso, cirurgia minimamente invasiva e tratamento humanizado — para você voltar a se movimentar sem dor.">
 <meta property="og:url" content="https://drdavidpires.com.br/">
-<meta property="og:image" content="https://drdavidpires.com.br/assets/img/dr-david-hero.webp">
+<meta property="og:image" content="https://drdavidpires.com.br/assets/img/dr-hero.webp">
 <meta property="og:locale" content="pt_BR">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,12 +51,7 @@
   <header class="nav" id="nav">
     <div class="nav__inner">
       <a class="brand" href="#inicio" aria-label="Dr. David Pires — início">
-        <span class="brand__mark" aria-hidden="true">
-          <svg viewBox="0 0 32 32" fill="none">
-            <path d="M13.4 5h5.2a1.2 1.2 0 0 1 1.2 1.2v5.2h5.2A1.2 1.2 0 0 1 26 12.6v5.2a1.2 1.2 0 0 1-1.2 1.2h-5.2v5.2a1.2 1.2 0 0 1-1.2 1.2h-5.2a1.2 1.2 0 0 1-1.2-1.2v-5.2H6.8A1.2 1.2 0 0 1 5.6 17.8v-5.2a1.2 1.2 0 0 1 1.2-1.2h5.4V6.2A1.2 1.2 0 0 1 13.4 5Z" fill="currentColor"/>
-          </svg>
-        </span>
-        <span class="brand__text"><b>Dr.</b> David Pires</span>
+        <img class="brand__logo" src="assets/img/logo-dark.png" width="1056" height="253" alt="Dr. David Pires — Ortopedista e Traumatologista">
       </a>
 
       <nav class="nav__links" aria-label="Navegação principal">
@@ -109,20 +104,11 @@
         </dl>
       </div>
 
-      <div class="hero__media">
-        <div class="hero__arch" aria-hidden="true"></div>
-        <img class="hero__photo" data-parallax="-28" src="assets/img/dr-david-cta.webp" width="928" height="1152" alt="Dr. David Pires, ortopedista e traumatologista" fetchpriority="high">
-
-        <a class="hero__contact" href="https://wa.me/555391178239" target="_blank" rel="noopener" data-float>
-          <span class="hero__contact-ic" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M6.6 3.8h3l1.5 3.8-2 1.3a11.6 11.6 0 0 0 5.9 5.9l1.3-2 3.8 1.5v3a1.8 1.8 0 0 1-2 1.8A15.8 15.8 0 0 1 4.8 5.8a1.8 1.8 0 0 1 1.8-2Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
-          </span>
-          <span class="hero__contact-text">
-            <span>Agendamento direto</span>
-            <strong>(53) 99117-8239</strong>
-          </span>
-        </a>
-      </div>
+      <figure class="hero__media">
+        <div class="hero__arch">
+          <img data-parallax="-26" src="assets/img/dr-hero.webp" width="1200" height="1600" alt="Dr. David Pires, ortopedista e traumatologista" fetchpriority="high">
+        </div>
+      </figure>
     </div>
   </section>
 
@@ -196,7 +182,7 @@
 
       <figure class="about__media">
         <div class="about__frame">
-          <img data-parallax="-24" src="assets/img/dr-david-about.webp" width="928" height="1152" alt="Dr. David Pires durante procedimento cirúrgico" loading="lazy">
+          <img data-parallax="-24" src="assets/img/dr-sobre.webp" width="1200" height="1500" alt="Dr. David Pires em consulta" loading="lazy">
         </div>
         <figcaption>
           <strong>CRM 16224</strong>
@@ -357,22 +343,26 @@
 
   <!-- ============ CTA ============ -->
   <section class="cta">
-    <div class="cta__photo" aria-hidden="true">
-      <img data-parallax="34" src="assets/img/dr-david-hero.webp" width="848" height="1264" alt="" loading="lazy">
-    </div>
-    <div class="container cta__inner">
-      <span class="eyebrow eyebrow--light" data-reveal>Vamos conversar</span>
-      <h2 class="display display--lg" data-split data-dark>Pronto para cuidar da <em>sua saúde?</em></h2>
-      <p data-reveal data-delay="0.1">
-        Agende sua consulta e dê o primeiro passo para um tratamento ortopédico moderno,
-        técnico e humanizado.
-      </p>
-      <ul class="cta__chips" data-reveal data-delay="0.18">
-        <li>Agendamento rápido</li>
-        <li>Direto pelo WhatsApp</li>
-        <li>Presencial ou online</li>
-      </ul>
-      <a class="btn btn--light btn--lg magnetic" href="https://wa.me/555391178239?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20David%20Pires" target="_blank" rel="noopener" data-reveal data-delay="0.24">Agendar Consulta</a>
+    <div class="container cta__grid">
+      <div class="cta__copy">
+        <span class="eyebrow eyebrow--light" data-reveal>Vamos conversar</span>
+        <h2 class="display display--lg" data-split data-dark>Pronto para cuidar da <em>sua saúde?</em></h2>
+        <p data-reveal data-delay="0.1">
+          Agende sua consulta e dê o primeiro passo para um tratamento ortopédico moderno,
+          técnico e humanizado.
+        </p>
+        <ul class="cta__chips" data-reveal data-delay="0.18">
+          <li>Agendamento rápido</li>
+          <li>Direto pelo WhatsApp</li>
+          <li>Presencial ou online</li>
+        </ul>
+        <a class="btn btn--light btn--lg magnetic" href="https://wa.me/555391178239?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20David%20Pires" target="_blank" rel="noopener" data-reveal data-delay="0.24">Agendar Consulta</a>
+      </div>
+      <figure class="cta__media">
+        <div class="cta__arch">
+          <img data-parallax="-18" src="assets/img/dr-cta.webp" width="1100" height="1467" alt="Dr. David Pires" loading="lazy">
+        </div>
+      </figure>
     </div>
   </section>
 
@@ -382,12 +372,7 @@
       <div class="footer__top">
         <div class="footer__brand">
           <a class="brand brand--footer" href="#inicio">
-            <span class="brand__mark" aria-hidden="true">
-              <svg viewBox="0 0 32 32" fill="none">
-                <path d="M13.4 5h5.2a1.2 1.2 0 0 1 1.2 1.2v5.2h5.2A1.2 1.2 0 0 1 26 12.6v5.2a1.2 1.2 0 0 1-1.2 1.2h-5.2v5.2a1.2 1.2 0 0 1-1.2 1.2h-5.2a1.2 1.2 0 0 1-1.2-1.2v-5.2H6.8A1.2 1.2 0 0 1 5.6 17.8v-5.2a1.2 1.2 0 0 1 1.2-1.2h5.4V6.2A1.2 1.2 0 0 1 13.4 5Z" fill="currentColor"/>
-              </svg>
-            </span>
-            <span class="brand__text"><b>Dr.</b> David Pires</span>
+            <img class="brand__logo" src="assets/img/logo-dark.png" width="1056" height="253" alt="Dr. David Pires — Ortopedista e Traumatologista">
           </a>
           <p>Ortopedia e Traumatologia · Especialista em Cirurgia do Joelho.<br>CRM 16224 · RQE 127337</p>
         </div>

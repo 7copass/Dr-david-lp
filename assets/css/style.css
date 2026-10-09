@@ -200,18 +200,13 @@ h1,h2,h3,h4{ margin:0; }
   padding-block:.85rem;
 }
 
-.brand{ display:flex; align-items:center; gap:.65rem; flex-shrink:0; }
-.brand__mark{
-  width:30px; height:30px; display:grid; place-items:center;
-  border-radius:7px; background:var(--navy); color:#fff;
+.brand{ display:flex; align-items:center; flex-shrink:0; }
+.brand__logo{
+  height:40px; width:auto;
+  transition:opacity .3s;
 }
-.brand__mark svg{ width:19px; height:19px; }
-.brand__text{
-  font-family:var(--serif); font-weight:500;
-  font-variation-settings:'SOFT' 0,'WONK' 0,'opsz' 40;
-  font-size:1.12rem; letter-spacing:-.015em; color:var(--ink); white-space:nowrap;
-}
-.brand__text b{ font-weight:500; font-style:italic; color:var(--blue); }
+.brand:hover .brand__logo{ opacity:.78; }
+.brand--footer .brand__logo{ height:52px; }
 
 .nav__links{ display:flex; align-items:center; gap:clamp(14px,1.7vw,28px); margin-inline:auto; }
 .nav__links a{
@@ -274,34 +269,19 @@ h1,h2,h3,h4{ margin:0; }
 }
 .hero__meta dd{ font-size:.9rem; font-weight:500; color:var(--ink); letter-spacing:-.01em; }
 
-/* arco: forma arquitetônica no lugar do "blob" */
+/* arco: a foto vive dentro da forma arquitetônica */
 .hero__media{ position:relative; display:flex; justify-content:center; align-items:flex-end; }
 .hero__arch{
-  position:absolute; inset:auto 0 0 0; margin-inline:auto;
-  width:min(96%,430px); height:clamp(330px,42vw,560px);
-  background:linear-gradient(180deg,#e7ecf4 0%, #dde5f1 55%, #d6e0ef 100%);
+  width:min(100%,440px); height:clamp(380px,44vw,580px);
+  background:var(--paper-2);
   border-radius:9999px 9999px var(--r-img) var(--r-img);
+  overflow:hidden;
 }
-.hero__photo{
-  position:relative; z-index:2;
-  width:min(104%,452px);
-  margin-bottom:-2px;
+.hero__arch img{
+  width:100%; height:100%;
+  object-fit:cover; object-position:50% 14%;
+  transform-origin:50% 50%;
 }
-
-.hero__contact{
-  position:absolute; z-index:3; right:-2%; bottom:11%;
-  display:flex; align-items:center; gap:.8rem;
-  background:var(--paper); border:1px solid var(--line);
-  border-radius:var(--r-card); padding:.78rem 1.1rem;
-  box-shadow:var(--sh-card);
-  transition:box-shadow .4s, border-color .4s;
-}
-.hero__contact:hover{ box-shadow:var(--sh-lift); border-color:rgba(16,35,58,.22); }
-.hero__contact-ic{ width:30px; height:30px; display:grid; place-items:center; color:var(--navy); flex-shrink:0; }
-.hero__contact-ic svg{ width:19px; height:19px; }
-.hero__contact-text{ display:flex; flex-direction:column; line-height:1.3; }
-.hero__contact-text span{ font-size:.67rem; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); }
-.hero__contact-text strong{ font-size:.97rem; font-weight:600; letter-spacing:-.01em; }
 
 /* =========================================================
    MARQUEE
@@ -519,23 +499,23 @@ h1,h2,h3,h4{ margin:0; }
 .qa__body p{ color:var(--muted); font-size:.93rem; line-height:1.72; max-width:60ch; }
 
 /* =========================================================
-   CTA — faixa com a foto real do consultório
+   CTA — faixa naval com retrato em arco
    ========================================================= */
 .cta{
   position:relative; isolation:isolate;
-  padding:clamp(80px,10vw,140px) 0;
-  background:var(--navy);
+  padding:clamp(64px,7vw,96px) 0 0;
+  background:linear-gradient(168deg,var(--navy) 0%, #0e3468 52%, #0a2850 100%);
   overflow:hidden;
-}
-.cta__photo{ position:absolute; inset:-14% 0; z-index:-2; }
-.cta__photo img{
-  width:100%; height:100%; object-fit:cover; object-position:34% 24%;
-  filter:grayscale(.3) contrast(1.04);
 }
 .cta::after{
   content:''; position:absolute; inset:0; z-index:-1;
-  background:linear-gradient(100deg, rgba(8,34,68,.95) 0%, rgba(9,38,76,.9) 44%, rgba(11,46,92,.55) 100%);
+  background:radial-gradient(720px 420px at 82% 6%, rgba(120,170,255,.16), transparent 62%);
 }
+.cta__grid{
+  display:grid; grid-template-columns:1.15fr .85fr;
+  gap:clamp(28px,5vw,72px); align-items:end;
+}
+.cta__copy{ padding-bottom:clamp(64px,7vw,96px); }
 .cta .display{ margin:1.4rem 0 1.3rem; max-width:15ch; }
 .cta p{ color:rgba(255,255,255,.76); max-width:44ch; }
 .cta__chips{ display:flex; flex-wrap:wrap; gap:.55rem; margin:2rem 0 2.3rem; }
@@ -544,6 +524,14 @@ h1,h2,h3,h4{ margin:0; }
   border:1px solid rgba(255,255,255,.26);
   padding:.52em 1.05em; border-radius:999px;
 }
+.cta__media{ display:flex; justify-content:center; align-items:flex-end; }
+.cta__arch{
+  width:min(100%,390px); height:clamp(320px,36vw,470px);
+  border-radius:9999px 9999px 0 0;
+  overflow:hidden;
+  background:rgba(255,255,255,.06);
+}
+.cta__arch img{ width:100%; height:100%; object-fit:cover; object-position:50% 12%; }
 
 /* =========================================================
    FOOTER
@@ -598,10 +586,11 @@ h1,h2,h3,h4{ margin:0; }
   .hero__grid{ grid-template-columns:1fr; align-items:start; }
   .hero .display--xl{ max-width:none; }
   .hero__media{ margin-top:3rem; }
-  .hero__photo{ width:min(84%,392px); }
-  .hero__arch{ width:min(78%,360px); height:clamp(345px,98vw,520px); }
-  .hero__contact{ right:0; bottom:8%; }
-  .services__head,.about__grid,.faq__grid,.section-head--row{ grid-template-columns:1fr; align-items:start; }
+  .hero__arch{ width:min(84%,400px); height:clamp(400px,104vw,560px); }
+  .services__head,.about__grid,.faq__grid,.section-head--row,.cta__grid{ grid-template-columns:1fr; align-items:start; }
+  .cta__copy{ padding-bottom:clamp(34px,5vw,48px); }
+  .cta__media{ justify-content:flex-start; }
+  .cta__arch{ width:min(78%,340px); height:clamp(300px,74vw,420px); }
   .services__cards{ grid-template-columns:repeat(2,1fr); }
   .scard--lead{ grid-column:span 2; flex-direction:column; gap:0; }
   .scard--lead .scard__index{ padding-bottom:2rem; padding-top:0; }
@@ -633,13 +622,14 @@ h1,h2,h3,h4{ margin:0; }
 }
 
 @media (max-width:560px){
+  .brand__logo{ height:34px; }
+  .brand--footer .brand__logo{ height:44px; }
   .eyebrow{ font-size:.615rem; letter-spacing:.14em; }
   .eyebrow::before{ width:20px; }
 }
 
 @media (max-width:420px){
   .footer__cols{ grid-template-columns:1fr; }
-  .hero__contact{ transform:scale(.9); transform-origin:right bottom; }
 }
 
 /* =========================================================
