@@ -9,7 +9,7 @@ Mesmo conteúdo, mesmas seções, mesmos links de WhatsApp — só a direção d
 | Versão | Arquivo | URL | Cara |
 |---|---|---|---|
 | **Editorial** | `index.html` | `/` | papel off-white + naval, serifa Fraunces, listas e filetes |
-| **Clássica** | `classico.html` | `/classico.html` | azul royal sobre azul claro, Plus Jakarta, cards e pílulas — fiel à referência enviada |
+| **Clássica** | `classico.html` | `/classico.html` | naval sobre azul-claro, Plus Jakarta, cards e pílulas — estrutura da referência enviada |
 
 Cada uma tem seu próprio CSS e JS (`assets/css/style.css` + `assets/js/main.js` para a
 editorial; `assets/css/classico.css` + `assets/js/classico.js` para a clássica). As
@@ -25,7 +25,7 @@ para fugir do visual de template:
 | | |
 |---|---|
 | **Papel** | off-white quente `#faf8f4` / `#f2efe8`, moldura `#e3dfd5` — no lugar do azul-claro genérico |
-| **Tinta** | naval `#0b2e5c`; azul `#1d5fd1` só como acento (itálicos, numerais, links) |
+| **Tinta** | naval da marca `#013356`; `#0a5c90` só como acento (itálicos, numerais, links) |
 | **Display** | **Fraunces** variável (`SOFT 0 · WONK 0`), itálico com `WONK 1` nos trechos destacados |
 | **Texto/UI** | **Plus Jakarta Sans** |
 | **Forma** | raio grande só nos painéis (26px); cards 10px; fotos quase retas (4px) |
@@ -38,6 +38,13 @@ numerais serifados no lugar de ícones outline, bento assimétrico nas áreas de
 (card 01 em linha cheia), diferenciais e trajetória como colunas/listas editoriais com
 filetes em vez de grid de cards iguais, e a foto real do consultório como faixa de
 fechamento em vez de repetir o recorte do médico.
+
+## Cor da marca
+
+`#013356` é o naval da marca e vale para as duas versões — a clássica também o
+adotou no lugar do azul royal `#1668ff` da referência, para bater com o logotipo.
+Toda a escala (hovers, tints de fundo, gradientes, fios) é derivada dele; o único
+tom fora da família é o verde `#25d366` do WhatsApp.
 
 ## Stack
 
