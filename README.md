@@ -143,6 +143,15 @@ As fotos vêm do ensaio profissional (Nikon Z6 II, 15 fotos). Seleção:
 Na editorial o retrato vive dentro do arco; na clássica, dentro da forma orgânica azul.
 Nenhuma das duas usa recorte em fundo chapado.
 
+## Ícones das áreas de atuação
+
+Os quatro ícones (`assets/img/icon-*.png`) são os do site original do médico —
+joelho com bisturis, joelho com artroscópio, joelho com dor irradiando e osso
+fraturado. Vieram em traço preto sobre branco; foram extraídos por luminância
+para branco sobre transparente, com o traço engrossado (`MaxFilter 7`) para
+aguentar os 58 px sobre o painel naval. Só a versão clássica os usa; a editorial
+mantém os numerais serifados 01–04.
+
 ## Pontos de contato (iguais nas duas versões)
 
 - WhatsApp: `https://wa.me/555391178239` — 7 ocorrências
