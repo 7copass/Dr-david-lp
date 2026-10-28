@@ -154,6 +154,6 @@ mantém os numerais serifados 01–04.
 
 ## Pontos de contato (iguais nas duas versões)
 
-- WhatsApp: `https://wa.me/555391178239` — 7 ocorrências
-- Telefone: `(53) 99117-8239`
+- WhatsApp: `https://wa.me/5593991125757` — 7 ocorrências
+- Telefone: `(93) 99112-5757`
 - Endereço: Rio Med Saúde — Av. Marechal Rondon, 1649, Santa Clara
