@@ -383,7 +383,7 @@ h1,h2,h3,h4{ margin:0; }
 .about__frame{
   border-radius:var(--r-img);
   overflow:hidden; background:var(--paper-2);
-  aspect-ratio:4/4.7; display:grid; place-items:end center;
+  aspect-ratio:4/5; display:grid; place-items:end center;
 }
 .about__frame img{ width:100%; object-fit:cover; object-position:top center; }
 .about__media figcaption{
@@ -400,6 +400,7 @@ h1,h2,h3,h4{ margin:0; }
 .about__copy .display{ margin:1.4rem 0 1.6rem; max-width:17ch; }
 .about__copy .lead{ margin-bottom:1.1rem; }
 .about__copy > p{ color:var(--muted); max-width:56ch; }
+.about__cta{ margin-top:2.4rem; }
 
 .checklist{ margin-top:2.6rem; border-top:1px solid var(--line); }
 .checklist li{ padding:1.15rem 0; border-bottom:1px solid var(--line-soft); }

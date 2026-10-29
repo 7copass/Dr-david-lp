@@ -371,7 +371,7 @@ p{ margin:0; }
   border-radius:var(--r-xl);
   overflow:hidden;
   background:linear-gradient(170deg,#e3eef4,#c9dde8);
-  aspect-ratio:4/4.5;
+  aspect-ratio:4/5;
   display:grid; place-items:end center;
   box-shadow:var(--shadow-lg);
 }
@@ -387,6 +387,7 @@ p{ margin:0; }
 
 .about__copy .lead{ margin-bottom:1rem; }
 .about__copy > p{ color:var(--muted); }
+.about__cta{ margin-top:2.2rem; }
 
 .checklist{ display:grid; gap:1rem; margin-top:2.2rem; }
 .checklist li{ display:flex; gap:.9rem; align-items:flex-start; }
